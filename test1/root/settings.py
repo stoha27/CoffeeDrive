@@ -39,7 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'registr.apps.CoffeeShopConfig',
-    'clientorder'
+    'clientorder',
+     'start',
 )
 
 MIDDLEWARE_CLASSES = (
