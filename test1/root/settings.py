@@ -30,7 +30,7 @@ AUTH_USER_MODEL = 'registr.UserProfile'
 
 # Application definition
 
-INSTALLED_APPS = (
+INSTALLED_APPS = [
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,8 +40,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'registr.apps.CoffeeShopConfig',
     'clientorder',
-     'start',
-)
+    'start',
+    'clientorder',
+    'rosetta'
+]
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
