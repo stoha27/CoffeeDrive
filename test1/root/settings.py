@@ -35,7 +35,7 @@ AUTH_USER_MODEL = 'registr.UserProfile'
 
 # Application definition
 
-INSTALLED_APPS = (
+INSTALLED_APPS = [
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,8 +45,15 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'registr.apps.CoffeeShopConfig',
     'clientorder',
+<<<<<<< HEAD
     'rosetta',
 )
+=======
+    'start',
+    'clientorder',
+    'rosetta'
+]
+>>>>>>> 317ec9355455dc4fa9ce8cd8cf50f6bc158b6637
 
 
 
