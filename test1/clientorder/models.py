@@ -10,9 +10,17 @@ class Client(models.Model):
     telephone = models.CharField(max_length=120)
 #   bank_account =  models.CharField(max_length=120)
 
+    class Meta:
+        verbose_name = 'клиент'
+
+
 class Goods (models.Model):
     name=models.CharField(max_length=120)
-    price=models.IntegerField() 
+    price=models.IntegerField()
+
+
+    class Meta:
+         verbose_name = 'кофейные_штучки'
      
  
 class Order (models.Model):
@@ -24,6 +32,10 @@ class Order (models.Model):
     date_fact_act = models.DateTimeField()
 
 
+    class Meta:
+         verbose_name = 'заказ'
+
+
 class UserProfile (models.Model):
     name_of_cafe=models.CharField(max_length=120)
     description=models.TextField()
@@ -33,7 +45,13 @@ class GroupOrder (models.Model):
     client=models.ForeignKey(Client)
     cafe=models.ForeignKey(UserProfile)
     order=models.ManyToManyField(Order)    
-    
+
+
+class User(models.Model):
+    fname = models.CharField(max_length=50, verbose_name = 'first name')
+
+    class Meta:
+         verbose_name = "users"
     
 #class Order (models.Model):
 #    name_of_cafe = models.CharField(max_length=120) 
