@@ -1,0 +1,47 @@
+.glyphicon {
+	padding: 7px 7px;
+	font-size: 20px;
+	color:#ffffff;
+		}   
+.color-menu{
+	position: absolute;
+	background: green;
+	border-radius: 0 0 15px 0;
+}
+.header{
+
+}
+.logo-kavadrive{
+	display: block;
+	margin: 0 auto;
+
+}
+
+.footer-upper{
+	background: #333333;
+	height: 75px;
+	border-bottom: 2px solid #ffffff;
+}
+.footer-lower{
+	background: #333333;
+	height: 75px;
+}
+.heart  {
+     color: #B70000;
+}
+ ul {
+    list-style-image: url(/static/foto/list.GIF); /* Путь к изображению маркера */
+   }
+.number-call{
+	padding: 20px;
+}
+.company{
+	padding: 0 0 0 337px;
+}
+.text-danger{
+	color:#6D3618;
+}
+.social{
+
+	padding-top:100px;
+}
